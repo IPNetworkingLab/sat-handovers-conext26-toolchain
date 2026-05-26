@@ -1,0 +1,15 @@
+[submodule "convergence-simulator"]
+	path = convergence-simulator
+	url = https://github.com/IPNetworkingLab/convergence-simulator.git
+[submodule "handover-filter"]
+	path = handover-filter
+	url = https://github.com/IPNetworkingLab/handover-filter.git
+[submodule "constellation-builder"]
+	path = constellation-builder
+	url = https://github.com/IPNetworkingLab/constellation-builder.git
+[submodule "constellation"]
+	path = constellation
+	url = https://github.com/IPNetworkingLab/constellation.git
+[submodule "constellation-code"]
+	path = constellation-code
+	url = https://github.com/IPNetworkingLab/constellation-code.git

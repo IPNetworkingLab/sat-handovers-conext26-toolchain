@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["convergence-simulator", "handover-filter", "constellation-builder", "toolchain", "constellation", "constellation-code"]
