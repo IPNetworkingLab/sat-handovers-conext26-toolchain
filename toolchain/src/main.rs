@@ -45,6 +45,8 @@ pub struct Cli {
     logging: bool,
     #[arg(long, default_value_t = false)]
     no_cache: bool,
+    #[arg(short, long, default_value_t = false, help = "Enable Rust logging.")]
+    enable_log: bool,
 }
 
 use convergence_simulator::SimulationCfg;
@@ -58,7 +60,9 @@ pub struct ToolchainParameters {
 
 fn main() -> Result<(), ()> {
     let cli = Cli::parse();
-    tracing_subscriber::registry().init();
+    if cli.enable_log {
+        tracing_subscriber::fmt().init();
+    }
     let _span = trace_span!("").entered();
     info!("Starting toolchain");
     let cfg = if !cli.cfg.exists() {
