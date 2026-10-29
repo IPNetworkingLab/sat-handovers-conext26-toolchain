@@ -103,3 +103,7 @@ where `-c` specifies the path towards a given `toolchain_params.toml` configurat
 Once the `kepler` directory has been populated, the `--no-cache` cli argument may be dropped in subsequent calls to the toolchain.
 
 > Note: If the `handover_filter` section of the toolchain configuration file is modified, the `--no-cache` argument **must** be provided to regenerate a sequence of connectivity events taking into account the changes.
+
+### Rust version
+
+The toolchain is known to compile with Rust version 1.98 and 1.99. Other versions may also compile the toolchain, but have not been tested.
